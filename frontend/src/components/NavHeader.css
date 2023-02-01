@@ -1,0 +1,24 @@
+.NavHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.NavHeader.signin {
+  justify-content: center;
+}
+.NavHeader li {
+  list-style: none;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.about,
+.signin {
+  color: white;
+}
+
+.logo {
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 1rem;
+}

@@ -1,0 +1,60 @@
+.Contact-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.component-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  background-color: #f2f2f21a;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.component-contact span {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.component-contact div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.component-contact input[type="text"],
+.component-contact input[type="email"],
+.component-contact input[type="tel"] {
+  width: calc(50% - 0.25rem);
+  height: 2rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.component-contact textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.button-contact {
+  background-color: #2199dad8;
+  color: white;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 2rem;
+}

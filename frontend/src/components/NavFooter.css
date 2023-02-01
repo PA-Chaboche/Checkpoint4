@@ -1,0 +1,29 @@
+.NavFooter {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-top: 72vh;
+}
+
+.NavFooter li {
+  display: flex;
+  list-style: none;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.projects,
+.contact {
+  color: white;
+}
+
+.copyright {
+  margin-top: 0.5rem;
+  font-size: 10px;
+}
+
+@media screen and (min-width: 769px) {
+  .NavFooter {
+    margin-top: 69vh;
+  }
+}
