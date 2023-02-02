@@ -5,11 +5,11 @@ CREATE TABLE roles (
 
 CREATE TABLE users (
   id int (11) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  firstname varchar(20) NOT NULL,
-  lastname varchar(20) NOT NULL,
-  email varchar(50) NOT NULL,
+  firstname varchar(20),
+  lastname varchar(20),
+  email varchar(50) NOT NULL unique,
   password varchar(225) NOT NULL,
-  rolesId int(11) UNSIGNED DEFAULT 0,
+  rolesId int(11) UNSIGNED DEFAULT 1,
   FOREIGN KEY (rolesId) REFERENCES roles(id)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
 
@@ -31,8 +31,9 @@ CREATE TABLE about (
   id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
   title VARCHAR(20) NOT NULL,
   paragraph TEXT NULL,
-  logo TEXT NOT NULL,
+  logo TEXT,
   pagesId INT UNSIGNED,
   FOREIGN KEY (pagesId) REFERENCES pages (id)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
 
+INSERT INTO roles (name) VALUES ("Membre"),("Admin");

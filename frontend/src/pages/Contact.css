@@ -1,60 +1,88 @@
 .Contact-page {
+  background-color: #333;
+  color: #fff;
+  height: 80vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
 }
 
 .component-contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5rem;
-  background-color: #f2f2f21a;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  background-color: #444;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-.component-contact span {
+.title-contact {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-left: 6.6rem;
 }
 
-.component-contact div {
+.component-firstname-lastname,
+.component-email-phone {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.component-contact input[type="text"],
 .component-contact input[type="email"],
-.component-contact input[type="tel"] {
-  width: calc(50% - 0.25rem);
-  height: 2rem;
-  padding: 1rem;
-  font-size: 1rem;
+.component-contact input[type="phone"],
+.component-contact input[type="text"],
+.component-contact input[type="tel"],
+.component-contact textarea[type="text"] {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid rgb(20, 137, 204);
+  margin: 3px;
+  padding: 10px;
+  width: 100%;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  margin-top: 1rem;
 }
 
-.component-contact textarea {
-  width: 100%;
+.component-message {
+  margin-bottom: 1rem;
+  width: 20.3rem;
+}
+
+textarea {
   height: 10rem;
-  padding: 0.5rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
   resize: none;
 }
 
+.component-btn {
+  display: flex;
+  justify-content: center;
+}
+
 .button-contact {
-  background-color: #2199dad8;
-  color: white;
-  padding: 1rem 1.5rem;
-  font-size: 1.2rem;
+  background-color: #92c2f6;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
   border: none;
-  border-radius: 20px;
   cursor: pointer;
-  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.button-contact:hover {
+  background-color: rgb(20, 137, 204);
+}
+
+@media screen and (max-width: 769px) {
+  .component-contact {
+    width: 80%;
+  }
+  .component-message {
+    margin-bottom: 1rem;
+    width: 15.3rem;
+  }
+  .title-contact {
+    margin-left: 4.5rem;
+  }
+  .button-contact {
+    background-color: rgb(20, 137, 204);
+  }
 }

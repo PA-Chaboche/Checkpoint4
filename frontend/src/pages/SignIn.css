@@ -1,52 +1,80 @@
 .SignIn-page {
+  background-color: #333;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
 }
 
 .component-signin {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #2d252533;
-  padding: 1em;
+  background-color: rgba(68, 68, 68, 0.112);
+  padding: 3rem;
   border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(20, 137, 204);
+  width: 400px;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .title-signin {
-  font-size: 1.5em;
-  margin-bottom: 1em;
+  font-size: 2em;
 }
-
+.signin-email,
+.signin-password,
 .button-signin {
-  margin-top: 1em;
-  padding: 0.5em 1em;
-  background-color: #6bade0;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  cursor: pointer;
-}
-
-.url-register {
-  margin-left: 0.5em;
-  color: rgb(0, 132, 255);
-  text-decoration: none;
+  margin-top: 1.5rem;
 }
 
 .component-signin input[type="email"],
 .component-signin input[type="password"] {
-  margin: 0.5em 0;
-  padding: 0.5em;
-  width: 300px;
-  font-size: 1em;
-  border: 1px solid gray;
-  border-radius: 10px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid rgb(20, 137, 204);
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
 }
 
-span {
-  font-size: 1.2em;
-  margin-right: 0.5em;
+.component-signin input[type="submit"] {
+  background-color: #92c2f6;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.component-signin input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgb(20, 137, 204);
+  color: #fff;
+}
+
+.url-register {
+  color: #fff;
+  margin-top: 20px;
+}
+.url-register-component {
+  margin-top: 1rem;
+}
+
+.url-register:hover {
+  cursor: pointer;
+  color: rgb(20, 137, 204);
+}
+
+@media screen and (max-width: 769px) {
+  .component-signin {
+    width: 80%;
+  }
+  .url-register-component {
+    font-size: 0.8rem;
+  }
+  .component-signin input[type="submit"] {
+    background-color: rgb(20, 137, 204);
+  }
 }

@@ -5,6 +5,7 @@
 }
 .NavHeader.signin {
   justify-content: center;
+  margin-right: 0.5rem;
 }
 .NavHeader li {
   list-style: none;
@@ -21,4 +22,17 @@
   height: 150px;
   border-radius: 50%;
   margin-top: 1rem;
+}
+
+.url-to-admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.component-url-to-admin {
+  background-color: rgb(20, 137, 204);
+  border-radius: 10px;
+  width: 5%;
+  margin-left: 42.6rem;
 }
