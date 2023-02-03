@@ -5,7 +5,6 @@
 }
 .NavHeader.signin {
   justify-content: center;
-  margin-right: 0.5rem;
 }
 .NavHeader li {
   list-style: none;
@@ -14,25 +13,46 @@
 }
 
 .about,
-.signin {
-  color: white;
+.signin-link {
+  color: rgb(255, 255, 255);
+  border: 2px solid #ffffff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.about:hover {
+  background-color: #4caf50;
+}
+.signin-link:hover {
+  background-color: #4caf50;
 }
 
 .logo {
   height: 150px;
   border-radius: 50%;
   margin-top: 1rem;
+  margin-right: 0.5rem;
 }
 
 .url-to-admin {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   color: white;
+  border-radius: 10px;
+  background-color: #4caf50;
+  padding: 0.5rem;
 }
 .component-url-to-admin {
-  background-color: rgb(20, 137, 204);
-  border-radius: 10px;
-  width: 5%;
-  margin-left: 42.6rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 769px) {
+  .about,
+  .signin-link {
+    color: rgb(255, 255, 255);
+    border: 2px solid #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #4caf50;
+  }
 }

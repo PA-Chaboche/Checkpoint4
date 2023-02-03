@@ -1,7 +1,7 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { useCurrentUserContext } from "./Context/CurrentUserContext";
 
-import logo from "../assets/chatmoto.jpg";
+import logo from "../assets/Boo.gif";
 import "./NavHeader.css";
 
 const NavHeader = () => {
@@ -42,8 +42,8 @@ const NavHeader = () => {
           !contact.test(pathname) &&
           !admin.test(pathname) && (
             <li>
-              <NavLink className="signin" to="/signIn">
-                Sign in
+              <NavLink className="signin-link" to="/signIn">
+                Login
               </NavLink>
             </li>
           )}
