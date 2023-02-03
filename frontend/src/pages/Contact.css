@@ -1,5 +1,4 @@
 .Contact-page {
-  background-color: #333;
   color: #fff;
   height: 80vh;
   display: flex;
@@ -8,10 +7,10 @@
 }
 
 .component-contact {
-  background-color: #444;
+  background-color: rgb(93, 93, 93);
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgb(41, 41, 41);
 }
 
 .title-contact {
@@ -31,10 +30,10 @@
 .component-contact input[type="text"],
 .component-contact input[type="tel"],
 .component-contact textarea[type="text"] {
-  background-color: #555;
-  color: #fff;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   border: none;
-  border-bottom: 2px solid rgb(20, 137, 204);
+  border-bottom: 2px solid #4caf50;
   margin: 3px;
   padding: 10px;
   width: 100%;
@@ -58,7 +57,7 @@ textarea {
 }
 
 .button-contact {
-  background-color: #92c2f6;
+  background-color: #72c775;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -68,7 +67,7 @@ textarea {
 }
 
 .button-contact:hover {
-  background-color: rgb(20, 137, 204);
+  background-color: #4caf50;
 }
 
 @media screen and (max-width: 769px) {

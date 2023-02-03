@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   justify-content: space-between;
-  margin-top: 72vh;
+  margin-top: 69vh;
 }
 
 .NavFooter li {
@@ -14,7 +14,18 @@
 
 .projects,
 .contact {
-  color: white;
+  color: rgb(255, 255, 255);
+  border: 2px solid #ffffff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact:hover {
+  background-color: #4caf50;
+}
+.projects:hover {
+  background-color: #4caf50;
 }
 
 .copyright {
@@ -23,8 +34,17 @@
   font-size: 10px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 769px) {
   .NavFooter {
     margin-top: 69vh;
+  }
+  .projects,
+  .contact {
+    color: rgb(255, 255, 255);
+    border: 2px solid #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #4caf50;
   }
 }

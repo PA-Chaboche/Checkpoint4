@@ -8,6 +8,7 @@ import SignIn from "./pages/SignIn";
 import Register from "./pages/Register";
 import About from "./pages/About";
 import Admin from "./pages/Admin";
+import Projects from "./pages/Projects";
 
 import "./App.css";
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/signIn" element={<SignIn />} />
         <Route path="/register" element={<Register />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
       {!signinRegex.test(pathname) &&
       !register.test(pathname) &&
