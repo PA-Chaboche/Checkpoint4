@@ -8,7 +8,7 @@ const NavFooter = () => {
       <ul>
         <li>
           <NavLink className="projects" to="/projects">
-            Projects
+            Social
           </NavLink>
         </li>
       </ul>

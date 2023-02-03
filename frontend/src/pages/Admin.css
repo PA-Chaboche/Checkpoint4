@@ -1,0 +1,71 @@
+.component-admin {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-about-id {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.select-about-admin {
+  display: block;
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-bottom: 2px solid #4caf50;
+  text-align: center;
+}
+
+.input-title-about {
+  text-align: center;
+}
+
+.input-title-about,
+.textarea-about-paragraph {
+  display: block;
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-bottom: 2px solid #4caf50;
+}
+
+.textarea-about-paragraph {
+  height: 200px;
+  resize: none;
+  border-bottom: 2px solid #4caf50;
+}
+
+.button-about-admin {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #72c775;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button-about-admin:hover {
+  background-color: #4caf50;
+}
+
+@media screen and (max-width: 769px) {
+  .button-about-admin {
+    background-color: #4caf50;
+  }
+}

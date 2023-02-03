@@ -45,17 +45,27 @@ const Admin = () => {
   }, []);
 
   return (
-    <div>
-      <p>hello admin</p>
+    <div className="component-admin">
+      <label className="title-about-id" htmlFor="aboutId">
+        Choose your about:
+      </label>
 
-      <label htmlFor="aboutId">Choose your about:</label>
-
-      <select value={editId} onChange={handleChange} name="editId" id="editId">
+      <select
+        className="select-about-admin"
+        value={editId}
+        onChange={handleChange}
+        name="editId"
+        id="editId"
+      >
+        <option className="option-id" value="">
+          please select a id
+        </option>
         {aboutIds &&
           aboutIds.map((el) => <option value={el.id}>{el.id}</option>)}
       </select>
 
       <input
+        className="input-title-about"
         type="text"
         value={content.title}
         onChange={(e) => {
@@ -66,6 +76,7 @@ const Admin = () => {
         }}
       />
       <textarea
+        className="textarea-about-paragraph"
         type="text"
         value={content.paragraph}
         onChange={(e) => {
@@ -75,7 +86,11 @@ const Admin = () => {
           }));
         }}
       />
-      <button onClick={handleUpdate} type="button">
+      <button
+        className="button-about-admin"
+        onClick={handleUpdate}
+        type="button"
+      >
         click
       </button>
     </div>
